@@ -6,6 +6,7 @@ describe Api::UsersController do
     User.destroy_all
   end
 
+
   describe "create" do
     it "creates and returns a new user from username and password params" do
       params = { 'new_user' => { 'username' => 'testuser', 'password' => 'testpass' } }
